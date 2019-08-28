@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+/* NavBar */
+
+
+.nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 22%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-bar {
+    padding-top: 17px;
+}
+
+.logo {
+    padding-left: 1em;
+}
+
+
+.listing {
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.listing li {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.listing li a {
+    transition: all 0.3s ease 0s;
+    color: grey;
+}
+
+.listing li a:hover {
+    color: rgb(94, 35, 233);
+}
+
+
+
+/* Clients Component */
+
+.login-clients {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    height: 73vh;
+
+}
+
+/* Partners Component */
+
+.login-partners {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    height: 73vh;
+
+}
+
+/* Home Component */
+
+
+/* Footer */
+
+.footer {
+    background-color: rgb(95, 95, 95);
+    width: 100%;
+    height: auto;    
+}
+
+.footer-container {
+    display: flex;
+}
+
+.icons {
+ padding-top: 2em;
+ display: flex;
+ padding-left: 5em;
+}
+
+.column {
+    flex: 50%;
+    margin: 0 auto;
+
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    padding: 4px;
+}
+
+/* Contact page */
+
+
+

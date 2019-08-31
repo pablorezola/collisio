@@ -1,122 +1,131 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
-
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* NavBar */
 
-
 .nav-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 22%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 22%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .nav-bar {
-    padding-top: 17px;
+  padding-top: 17px;
 }
 
 .logo {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
-
 .listing {
-    text-transform: capitalize;
-    list-style: none;
+  text-transform: capitalize;
+  list-style: none;
 }
 
 .listing li {
-    display: inline-block;
-    padding-right: 1rem;
+  display: inline-block;
+  padding-right: 1rem;
 }
 
 .listing li a {
-    transition: all 0.3s ease 0s;
-    color: grey;
+  transition: all 0.3s ease 0s;
+  color: grey;
 }
 
 .listing li a:hover {
-    color: rgb(94, 35, 233);
+  color: rgb(94, 35, 233);
 }
-
-
 
 /* Clients Component */
 
 .login-clients {
-    display: flex;
-    justify-content: center;
-    padding-top: 10%;
-    height: 73vh;
-
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  height: 73vh;
 }
 
 /* Partners Component */
 
 .login-partners {
-    display: flex;
-    justify-content: center;
-    padding-top: 10%;
-    height: 73vh;
-
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  height: 73vh;
 }
 
 /* Home Component */
+
+.content {
+    width: auto;
+    padding-bottom: 0;
+}
+
+.carousel-container {
+    background-color: rgb(8, 61, 110);
+    height: 70vh;
+}
+
+.card-container {
+  height: 20vh;
+  
+}
 
 
 /* Footer */
 
 .footer {
-    background-color: rgb(95, 95, 95);
-    width: 100%;
-    height: auto;    
+  background-color: rgb(95, 95, 95);
+  width: 100%;
+  height: auto;
 }
 
 .footer-container {
-    display: flex;
+  display: flex;
 }
 
 .icons {
- padding-top: 2em;
- display: flex;
- padding-left: 5em;
+  padding-top: 2em;
+  display: flex;
+  padding-left: 5em;
 }
 
 .column {
-    flex: 50%;
-    margin: 0 auto;
-
+  flex: 50%;
+  margin: 0 auto;
 }
 
 .date {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .address {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .link {
-    padding: 4px;
+  padding: 4px;
 }
 
 /* Contact page */
 
-
-
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px !important; 
+    margin-left: 0px !important; 
+}

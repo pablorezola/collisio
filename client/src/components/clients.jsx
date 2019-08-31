@@ -4,7 +4,7 @@ class Client extends Component {
   render() {
     return (
       <React.Fragment>
-         <h2>BLA BLA</h2>
+        <h2>BLA BLA</h2>
         <div className="login-clients">
           <form>
             <div className="form-group">

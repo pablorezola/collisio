@@ -1,26 +1,66 @@
 import React from "react";
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 
-function Map() {
+const Contact = () => {
   return (
-    <GoogleMap
-      defaultZoom={10}
-      defaultCenter={{ lat: 40.45463, lng: -3.68946 }}
-    />
+    <MDBContainer>
+      <MDBRow>
+        <MDBCol md="6">
+          <form>
+            <p className="h4 text-center mb-4">Contact Us</p>
+            <label htmlFor="defaultFormContactNameEx" className="grey-text">
+              Name
+            </label>
+            <input
+              type="text"
+              id="defaultFormContactNameEx"
+              className="form-control"
+            />
+            <br />
+            <label htmlFor="defaultFormContactEmailEx" className="grey-text">
+              Email
+            </label>
+            <input
+              type="email"
+              id="defaultFormContactEmailEx"
+              className="form-control"
+            />
+            <br />
+            <label
+              htmlFor="defaultFormContactSubjectEx"
+              className="grey-text"
+            >
+              Subject
+            </label>
+            <input
+              type="text"
+              id="defaultFormContactSubjectEx"
+              className="form-control"
+            />
+            <br />
+            <label
+              htmlFor="defaultFormContactMessageEx"
+              className="grey-text"
+            >
+              Message
+            </label>
+            <textarea
+              type="text"
+              id="defaultFormContactMessageEx"
+              className="form-control"
+              rows="3"
+            />
+            <div className="text-center mt-4">
+              <MDBBtn color="warning" outline type="submit">
+                Send
+                <MDBIcon far icon="paper-plane" className="ml-2" />
+              </MDBBtn>
+            </div>
+          </form>
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
   );
-}
+};
 
-const WrappedMap = withScriptjs(withGoogleMap(Map));
-
-export default function App() {
-  return (
-    <div className="map" style={{ width: "500px", height: "500px" }}>
-      <WrappedMap
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `100%` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-      />
-    </div>
-  );
-}
+export default Contact;

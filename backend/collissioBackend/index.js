@@ -1,12 +1,27 @@
-var express = require('express');
+const express = require('express');
 const bodyParser = require("body-parser");
+const exphbs = require("express-handlebars");
+const path = require("path");
 const nodemailer = require("nodemailer");
-const app = express()
-var router = express.Router();
+
+const router = express.Router();
+
+const app = express();
+
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
+
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+app.use("/public", express.static(path.join(__dirname, "public")));
 
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: false}))
+app.get("/", (req,res) => {
+  res.render("contact");
+})
+
+
 
 app.post("/api/form", (req, res) => {
  nodemailer.createTestAccount((error, account) => {
@@ -30,11 +45,6 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)
 })
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
 
 
 module.exports = router;

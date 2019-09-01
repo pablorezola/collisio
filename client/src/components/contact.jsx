@@ -1,66 +1,69 @@
-import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
+import React, { Component } from "react";
+import { FormFeedback, Form, FormGroup, Label, Input } from "reactstrap";
 
-const Contact = () => {
-  return (
-    <MDBContainer>
-      <MDBRow>
-        <MDBCol md="6">
-          <form>
-            <p className="h4 text-center mb-4">Contact Us</p>
-            <label htmlFor="defaultFormContactNameEx" className="grey-text">
-              Name
-            </label>
-            <input
-              type="text"
-              id="defaultFormContactNameEx"
-              className="form-control"
-            />
-            <br />
-            <label htmlFor="defaultFormContactEmailEx" className="grey-text">
-              Email
-            </label>
-            <input
-              type="email"
-              id="defaultFormContactEmailEx"
-              className="form-control"
-            />
-            <br />
-            <label
-              htmlFor="defaultFormContactSubjectEx"
-              className="grey-text"
-            >
-              Subject
-            </label>
-            <input
-              type="text"
-              id="defaultFormContactSubjectEx"
-              className="form-control"
-            />
-            <br />
-            <label
-              htmlFor="defaultFormContactMessageEx"
-              className="grey-text"
-            >
-              Message
-            </label>
-            <textarea
-              type="text"
-              id="defaultFormContactMessageEx"
-              className="form-control"
-              rows="3"
-            />
-            <div className="text-center mt-4">
-              <MDBBtn color="warning" outline type="submit">
-                Send
-                <MDBIcon far icon="paper-plane" className="ml-2" />
-              </MDBBtn>
-            </div>
-          </form>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
-  );
-};
-
+class Contact extends Component {
+  render() {
+    return (
+      <>
+        <div className="contact-container">
+          <div className="contact-form">
+            <Form>
+              <FormGroup controlId="formBasicEmail">
+                <h2 className="form-title"> Contact Us!</h2>
+                <Label className="text-muted">Email address</Label>
+                <Input
+                  type="email"
+                  name="email"
+                  value=""
+                  className="text-primary"
+                  onChange
+                  placeholder="Enter email"
+                />
+              </FormGroup>
+              <FormGroup controlId="formBasicName">
+                <Label className="text-muted">Name</Label>
+                <Input
+                  type="text"
+                  name="name"
+                  value=""
+                  className="text-primary"
+                  onChange
+                  placeholder="Name"
+                />
+              </FormGroup>
+              <FormGroup controlId="formBasicSubject">
+                <Label className="text-muted">Subject</Label>
+                <Input
+                  type="text"
+                  name="subject"
+                  className="text-primary"
+                  value=""
+                  onChange
+                  placeholder="Subject"
+                />
+              </FormGroup>
+              <FormGroup controlId="formBasicMessage">
+                <Label className="text-muted">Message</Label>
+                <Input
+                  type="textarea"
+                  name="message"
+                  className="text-primary"
+                  value=""
+                  onChange
+                />
+              </FormGroup>
+              <button
+                className="btn btn-primary"
+                variant="primary"
+                type="submit"
+              >
+                Submit
+              </button>
+            </Form>
+          </div>
+        </div>
+      </>
+    );
+  }
+}
 export default Contact;

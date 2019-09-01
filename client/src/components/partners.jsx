@@ -3,7 +3,9 @@ import React from "react";
 const Partners = () => {
   return (
     <React.Fragment>
-      <h2>BLA BLA</h2>
+      <div className="title-header">
+        <h2>BLA BLA</h2>
+      </div>
       <div className="login-partners">
         <form>
           <div className="form-group">

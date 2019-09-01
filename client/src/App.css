@@ -1,3 +1,6 @@
+
+/*Globals */
+
 * {
   margin: 0;
   padding: 0;
@@ -45,16 +48,21 @@ h2 {
 }
 
 .listing li a:hover {
-  color: rgb(94, 35, 233);
+  color: rgb(8, 61, 110);
 }
 
 /* Clients Component */
+
 
 .login-clients {
   display: flex;
   justify-content: center;
   padding-top: 10%;
   height: 73vh;
+}
+
+.form-class {
+  background-color: white;
 }
 
 /* Partners Component */
@@ -73,48 +81,56 @@ h2 {
     padding-bottom: 0;
 }
 
-.carousel-container {
-    background-color: rgb(8, 61, 110);
-    height: 70vh;
+.home-container {
+    background-image: url("./images/city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 62vh;
+}
+
+.home-text {
+  color: white;
+  height: auto;
+  padding-top: 10rem;
+  padding-left: 16em;
 }
 
 .card-container {
-  height: 20vh;
-  
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   background-color: rgb(212, 212, 212);
 }
 
+.card-container>* {
+  flex: 10 10 33.333%;
+}
+
+.card {
+  padding-left: 3em;
+  padding-right: 4em;
+}
 
 /* Footer */
 
 .footer {
-  background-color: rgb(95, 95, 95);
+  background-color: black;
   width: 100%;
-  height: auto;
-}
-
-.footer-container {
-  display: flex;
+  height: 10vh;
 }
 
 .icons {
-  padding-top: 2em;
-  display: flex;
   padding-left: 5em;
-}
-
-.column {
-  flex: 50%;
-  margin: 0 auto;
-}
-
-.date {
-  display: flex;
-  justify-content: center;
 }
 
 .address {
   display: flex;
-  justify-content: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  justify-content: flex-start;
+  color: white;
+  font-size: x-small;
 }
 
 .link {
@@ -128,6 +144,9 @@ h2 {
 }
 
 .contact-container {
+  background-image: url("./images/building.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
 }
 
@@ -137,4 +156,8 @@ h2 {
   justify-content: center;
   margin: 0 auto;
   height: auto;
+}
+
+.text-label {
+  color: black;
 }

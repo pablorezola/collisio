@@ -7,11 +7,7 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
-
-h2 {
-  text-align: center;
-}
-
+ 
 /* NavBar */
 
 .nav-header {
@@ -51,28 +47,28 @@ h2 {
   color: rgb(8, 61, 110);
 }
 
-/* Clients Component */
-
+/* Login Component */
 
 .login-clients {
   display: flex;
   justify-content: center;
-  padding-top: 10%;
   height: 73vh;
 }
 
-.form-class {
-  background-color: white;
+.title-header {text-align: center;}
+
+.wrapper { display: flex; }
+.block { width: 50%; }
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 2.3rem !important;
 }
 
-/* Partners Component */
+.form-class {padding-top: 2%;}
 
-.login-partners {
-  display: flex;
-  justify-content: center;
-  padding-top: 10%;
-  height: 73vh;
-}
 
 /* Home Component */
 
@@ -101,15 +97,17 @@ h2 {
    flex-wrap: wrap;
    justify-content: center;
    background-color: rgb(212, 212, 212);
+   padding: 40px 0;
+   padding-left: 13%;
+   padding-right: 13%;
 }
 
-.card-container>* {
-  flex: 10 10 33.333%;
-}
+.card-container>* {flex: 30%;}
 
 .card {
-  padding-left: 3em;
-  padding-right: 4em;
+  margin-bottom: 25px;
+  margin-left: 25px;
+
 }
 
 /* Footer */
@@ -120,9 +118,7 @@ h2 {
   height: 10vh;
 }
 
-.icons {
-  padding-left: 5em;
-}
+.icons {padding-left: 5em;}
 
 .address {
   display: flex;
@@ -133,15 +129,11 @@ h2 {
   font-size: x-small;
 }
 
-.link {
-  padding: 4px;
-}
+.link {padding: 4px;}
 
 /* Contact page */
 
-.form-title {
-  padding-bottom: 10px;
-}
+.form-title {padding-bottom: 10px;}
 
 .contact-container {
   background-image: url("./images/building.jpeg");
@@ -158,6 +150,4 @@ h2 {
   height: auto;
 }
 
-.text-label {
-  color: black;
-}
+.text-label {color: black;}

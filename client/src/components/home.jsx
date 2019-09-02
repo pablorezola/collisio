@@ -16,101 +16,85 @@ const Home = () => {
             <h1>blablablablabla</h1>
             <p>blablablabla</p>
             <Link to="/contact">
-            <button className="btn btn-primary">Contact</button>
-          </Link>
+              <button type="button" class="btn btn-outline-light">
+                Contact
+              </button>
+            </Link>
           </div>
         </div>
         <div className="card-container">
-            <div className="card">
-              <img
-                src={ib}
-                height="200px"
-                className="card-img-top"
-                alt=""
-              ></img>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">blablablablabla</p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
+          <div className="card">
+            <img src={ib} height="200px" className="card-img-top" alt=""></img>
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">blablablablabla</p>
+              <Link to="/">
+              <button type="button" class="btn btn-outline-dark">
+                Learn More
+              </button>
+            </Link>
             </div>
-            <div className="card">
-              <img
-                src={ib2}
-                height="200px"
-                className="card-img-top"
-                alt=""
-              ></img>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">blablablabla</p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
+          </div>
+          <div className="card">
+            <img src={ib2} height="200px" className="card-img-top" alt=""></img>
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">blablablabla</p>
+              <Link to="/">
+              <button type="button" class="btn btn-outline-dark">
+                Learn More
+              </button>
+            </Link>
             </div>
-            <div className="card">
-              <img
-                src={ib3}
-                height="200px"
-                className="card-img-top"
-                alt=""
-              ></img>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">blablablablabla</p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
+          </div>
+          <div className="card">
+            <img src={ib3} height="200px" className="card-img-top" alt=""></img>
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">blablablablabla</p>
+              <Link to="/">
+              <button type="button" class="btn btn-outline-dark">
+                Learn More
+              </button>
+            </Link>
             </div>
-            <div className="card">
-              <img
-                src={ib4}
-                height="200px"
-                className="card-img-top"
-                alt=""
-              ></img>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">blablablablabla</p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
+          </div>
+          <div className="card">
+            <img src={ib4} height="200px" className="card-img-top" alt=""></img>
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">blablablablabla</p>
+              <Link to="/">
+              <button type="button" class="btn btn-outline-dark">
+                Learn More
+              </button>
+            </Link>
             </div>
-            <div className="card">
-              <img
-                src={ib5}
-                height="200px"
-                className="card-img-top"
-                alt=""
-              ></img>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">blablablablabla</p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
+          </div>
+          <div className="card">
+            <img src={ib5} height="200px" className="card-img-top" alt=""></img>
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">blablablablabla</p>
+              <Link to="/">
+              <button type="button" class="btn btn-outline-dark">
+                Learn More
+              </button>
+            </Link>
             </div>
-            <div className="card">
-              <img
-                src={ib5}
-                height="200px"
-                className="card-img-top"
-                alt=""
-              ></img>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">blablablablabla</p>
-                <a href="/" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
+          </div>
+          <div className="card">
+            <img src={ib5} height="200px" className="card-img-top" alt=""></img>
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">blablablablabla</p>
+              <Link to="/">
+              <button type="button" class="btn btn-outline-dark">
+                Learn More
+              </button>
+            </Link>
             </div>
+          </div>
         </div>
       </div>
     </React.Fragment>

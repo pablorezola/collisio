@@ -16,10 +16,7 @@ class NavBar extends Component {
                 <Link to="/" style={{textDecoration: "none"}}>Home</Link>
               </li>
               <li>
-                <Link to="/client-login" style={{textDecoration: "none"}}>Clients</Link>
-              </li>
-              <li>
-                <Link to="/partner-login"style={{textDecoration: "none"}}>Partners</Link>
+                <Link to="/login" style={{textDecoration: "none"}}>Login</Link>
               </li>
               <li>
                 <Link to="/contact"style={{textDecoration: "none"}}>Contact</Link>

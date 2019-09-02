@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Home from "./components/home";
-import Client from "./components/clients";
-import Partner from "./components/partners";
+import Login from "./components/login";
 import NotFound from "./components/notFound";
 import Contact from "./components/contact";
 import Logout from "./components/logout";
@@ -20,8 +19,7 @@ class App extends Component {
         <Switch>
           <Route path="/clients" component={ClientDashboard} />
           <Route path="/partners" component={PartnerDashboard} />
-          <Route path="/client-login" component={Client} />
-          <Route path="/partner-login" component={Partner} />
+          <Route path="/login" component={Login} />
           <Route path="/logout" component={Logout} />
           <Route path="/not-found" component={NotFound} />
           <Route path="/contact" component={Contact} />

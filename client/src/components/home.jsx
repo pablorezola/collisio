@@ -16,7 +16,7 @@ const Home = () => {
             <h1>blablablablabla</h1>
             <p>blablablabla</p>
             <Link to="/contact">
-              <button type="button" class="btn btn-outline-light">
+              <button type="button" className="btn btn-outline-light">
                 Contact
               </button>
             </Link>
@@ -29,7 +29,7 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" class="btn btn-outline-dark">
+              <button type="button" className="btn btn-outline-dark">
                 Learn More
               </button>
             </Link>
@@ -41,7 +41,7 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablabla</p>
               <Link to="/">
-              <button type="button" class="btn btn-outline-dark">
+              <button type="button" className="btn btn-outline-dark">
                 Learn More
               </button>
             </Link>
@@ -53,7 +53,7 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" class="btn btn-outline-dark">
+              <button type="button" className="btn btn-outline-dark">
                 Learn More
               </button>
             </Link>
@@ -65,7 +65,7 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" class="btn btn-outline-dark">
+              <button type="button" className="btn btn-outline-dark">
                 Learn More
               </button>
             </Link>
@@ -77,7 +77,7 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" class="btn btn-outline-dark">
+              <button type="button" className="btn btn-outline-dark">
                 Learn More
               </button>
             </Link>
@@ -89,7 +89,7 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" class="btn btn-outline-dark">
+              <button type="button" className="btn btn-outline-dark">
                 Learn More
               </button>
             </Link>

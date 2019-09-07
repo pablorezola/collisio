@@ -10,6 +10,10 @@ class NavBar extends Component {
           <Link to="/">
             <img className="logo" src={logo} height="60px" alt="" />
           </Link>
+          <div className="menu-wrap">
+          <input type="checkbox" className="toggler"></input>
+          <div className="hamburger"><div></div></div>
+          </div>
           <nav className="nav-bar">
             <ul className="listing">
               <li>

@@ -7,38 +7,34 @@ class Login extends Component {
     return (
       <React.Fragment>
         <div className="content-client">
+          <form className="form-class">
           <div className="title-header">
             <h2>BLA BLA</h2>
           </div>
           <div className="wrapper">
             <div className="block">
-              <button type="button" class="btn btn-primary btn-lg">
-                Clients
-              </button>
+              <input type="checkbox" id="client-check" defaultChecked={false} />
+              Client
             </div>
-            <div className="block">
-              <button type="button" class="btn btn-secondary btn-lg">
-                Partners
-              </button>
+            <div className="block2">
+              <input
+                type="checkbox"
+                id="partner-check"
+                defaultChecked={false}
+              />
+              Partner
             </div>
           </div>
-          <div className="login-clients">
-            <form className="form-class">
-              <div className="form-group">
-                <label htmlFor="username">
-                  <FaUserTie></FaUserTie> Username
-                </label>
-                <input id="username" type="text" className="form-control" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">
-                  <FaLock></FaLock> Password
-                </label>
-                <input id="password" type="text" className="form-control" />
-              </div>
-              <button className="btn btn-success">Login</button>
-            </form>
-          </div>
+            <label htmlFor="username">
+              <FaUserTie></FaUserTie> Username
+            </label>
+            <input id="username" type="text" className="form-control" />
+            <label id="label" htmlFor="password">
+              <FaLock></FaLock> Password
+            </label>
+            <input id="password" type="text" className="form-control" />
+            <button className="blue-button btn btn-success">Login</button>
+          </form>
         </div>
       </React.Fragment>
     );

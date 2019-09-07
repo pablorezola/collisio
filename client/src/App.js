@@ -8,6 +8,7 @@ import Logout from "./components/logout";
 import NavBar from "./components/navBar";
 import PartnerDashboard from './components/partnerDashboard';
 import ClientDashboard from './components/clientDashboard';
+import NewsLetter from './components/newsLetter';
 import Footer from './components/footer';
 import "./App.css";
 
@@ -26,6 +27,7 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Redirect to="/not-found" />
         </Switch>
+        <NewsLetter />
         <Footer />
       </div>
     );

@@ -1,4 +1,3 @@
-
 /*Globals */
 
 * {
@@ -7,17 +6,19 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
- 
+
 /* NavBar */
 
 .nav-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 22%;
   padding-top: 15px;
   padding-bottom: 15px;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -47,41 +48,123 @@
   color: rgb(8, 61, 110);
 }
 
+.menu-wrap {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  z-index: 1;
+  width: 45px;
+  height: 58px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(8, 61, 110);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
 /* Login Component */
+
+.content-client {
+  height: 73vh;
+}
 
 .login-clients {
   display: flex;
   justify-content: center;
-  height: 73vh;
+  
 }
 
-.title-header {text-align: center;}
-
-.wrapper { display: flex; }
-.block { width: 50%; }
-
-.btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 2.3rem !important;
+.title-header {
+  text-align: center;
 }
 
-.form-class {padding-top: 2%;}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
 
+.form-class {
+  width: 20%;
+  margin-left: 40%;
+}
+
+.block2 {
+  padding-left: 3rem;
+}
+
+#label {
+  margin-top: 2rem;
+}
+
+.blue-button{
+  margin-top: 2rem;
+}
 
 /* Home Component */
 
 .content {
-    width: auto;
-    padding-bottom: 0;
+  width: auto;
+  padding-bottom: 0;
 }
 
 .home-container {
-    background-image: url("./images/city.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 62vh;
+  background-image: url("./images/city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 62vh;
 }
 
 .home-text {
@@ -92,22 +175,60 @@
 }
 
 .card-container {
-   height: auto;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   background-color: rgb(212, 212, 212);
-   padding: 40px 0;
-   padding-left: 13%;
-   padding-right: 13%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(212, 212, 212);
+  padding: 40px 0;
+  padding-left: 13%;
+  padding-right: 13%;
 }
 
-.card-container>* {flex: 30%;}
+.card-container > * {
+  flex: 30%;
+}
 
 .card {
   margin-bottom: 25px;
   margin-left: 25px;
+}
 
+/* NewsLetter */
+
+.letter-container {
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(5, 38, 70);
+  padding: 46px 0 46px 0;
+}
+
+.newsletter {
+  margin: 0 auto;
+}
+
+#title-news,
+#paragraph-news {
+  text-align: center;
+  color: white;
+}
+
+#title-news {
+  margin: 0 0 15px 0;
+}
+
+#paragraph-news {
+  margin-bottom: 20px;
+}
+
+.fieldset {
+  display: inline-block;
+  left: 43%;
+  position: relative;
+}
+
+.email-text {
+  margin: 0 10px 0 0;
 }
 
 /* Footer */
@@ -118,7 +239,9 @@
   height: 10vh;
 }
 
-.icons {padding-left: 5em;}
+.icons {
+  padding-left: 5em;
+}
 
 .address {
   display: flex;
@@ -129,17 +252,21 @@
   font-size: x-small;
 }
 
-.link {padding: 4px;}
+.link {
+  padding: 4px;
+}
 
 /* Contact page */
 
-.form-title {padding-bottom: 10px;}
+.form-title {
+  padding-bottom: 10px;
+}
 
 .contact-container {
   background-image: url("./images/building.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
 }
 
 .contact-form {
@@ -150,4 +277,6 @@
   height: auto;
 }
 
-.text-label {color: black;}
+.text-label {
+  color: black;
+}

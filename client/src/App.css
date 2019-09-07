@@ -13,12 +13,13 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 22%;
   padding-top: 15px;
   padding-bottom: 15px;
   top: 0;
   left: 0;
   z-index: 1;
+  position: fixed;
+  background-color: white;
 }
 
 .nav-bar {
@@ -124,7 +125,6 @@
 .login-clients {
   display: flex;
   justify-content: center;
-  
 }
 
 .title-header {
@@ -134,6 +134,8 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .form-class {
@@ -149,7 +151,7 @@
   margin-top: 2rem;
 }
 
-.blue-button{
+.blue-button {
   margin-top: 2rem;
 }
 
@@ -161,16 +163,16 @@
 }
 
 .home-container {
-  background-image: url("./images/city.jpg");
+  background-image: url("./images/picture.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 62vh;
+  height: 85vh;
 }
 
 .home-text {
-  color: white;
+  color: rgb(8, 61, 110);
   height: auto;
-  padding-top: 10rem;
+  padding-top: 15em;
   padding-left: 16em;
 }
 
@@ -263,7 +265,7 @@
 }
 
 .contact-container {
-  background-image: url("./images/building.jpeg");
+  background-image: url("./images/picture2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;

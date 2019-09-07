@@ -16,7 +16,7 @@ const Home = () => {
             <h1>blablablablabla</h1>
             <p>blablablabla</p>
             <Link to="/contact">
-              <button type="button" className="btn btn-outline-light">
+              <button type="button" className="btn btn-outline-primary">
                 Contact
               </button>
             </Link>
@@ -29,10 +29,10 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" className="btn btn-outline-dark">
-                Learn More
-              </button>
-            </Link>
+                <button type="button" className="btn btn-outline-dark">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -41,10 +41,10 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablabla</p>
               <Link to="/">
-              <button type="button" className="btn btn-outline-dark">
-                Learn More
-              </button>
-            </Link>
+                <button type="button" className="btn btn-outline-dark">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -53,10 +53,10 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" className="btn btn-outline-dark">
-                Learn More
-              </button>
-            </Link>
+                <button type="button" className="btn btn-outline-dark">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -65,10 +65,10 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" className="btn btn-outline-dark">
-                Learn More
-              </button>
-            </Link>
+                <button type="button" className="btn btn-outline-dark">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -77,10 +77,10 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" className="btn btn-outline-dark">
-                Learn More
-              </button>
-            </Link>
+                <button type="button" className="btn btn-outline-dark">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -89,11 +89,31 @@ const Home = () => {
               <h5 className="card-title">Card title</h5>
               <p className="card-text">blablablablabla</p>
               <Link to="/">
-              <button type="button" className="btn btn-outline-dark">
-                Learn More
-              </button>
-            </Link>
+                <button type="button" className="btn btn-outline-dark">
+                  Learn More
+                </button>
+              </Link>
             </div>
+          </div>
+        </div>
+        <div className="letter-container">
+          <div className="newsletter">
+            <h3 id="title-news">BlaBlaBla</h3>
+            <p id="paragraph-news">blabalbalabalaba</p>
+            <form className="email-news">
+              <div className="fieldset">
+                <input
+                  placeholder="Email"
+                  type="email"
+                  className="email-text"
+                  required
+                  autoComplete="off"
+                />
+                <button type="submit" className="btn btn-primary">
+                  Sign Up
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

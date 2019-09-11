@@ -6,28 +6,65 @@ class NavBar extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="nav-header">
-          <Link to="/">
-            <img className="logo" src={logo} height="60px" alt="" />
-          </Link>
-          <div className="menu-wrap">
-          <input type="checkbox" className="toggler"></input>
-          <div className="hamburger"><div></div></div>
+        <header className="nav-header">
+          <div className="bar-container">
+            <div className="column">
+              <div className="menu-wrap">
+                <input type="checkbox" className="toggler"></input>
+                <div className="hamburger">
+                  <div></div>
+                </div>
+              </div>
+              <Link to="/">
+                <img className="logo" src={logo} height="80px" alt="" />
+              </Link>
+            </div>
+            <div className="column" id="nav-links">
+              <ul className="listing">
+                <li>
+                  <Link
+                    to="/"
+                    style={{ textDecoration: "none", fontSize: "22px" }}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/login"
+                    style={{ textDecoration: "none", fontSize: "22px" }}
+                  >
+                    Login
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/research"
+                    style={{ textDecoration: "none", fontSize: "22px" }}
+                  >
+                    Research
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/careers"
+                    style={{ textDecoration: "none", fontSize: "22px" }}
+                  >
+                    Careers
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    style={{ textDecoration: "none", fontSize: "22px" }}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-          <nav className="nav-bar">
-            <ul className="listing">
-              <li>
-                <Link to="/" style={{textDecoration: "none"}}>Home</Link>
-              </li>
-              <li>
-                <Link to="/login" style={{textDecoration: "none"}}>Login</Link>
-              </li>
-              <li>
-                <Link to="/contact"style={{textDecoration: "none"}}>Contact</Link>
-              </li>
-            </ul>
-          </nav>
-        </nav>
+        </header>
       </React.Fragment>
     );
   }

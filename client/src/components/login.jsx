@@ -9,7 +9,7 @@ class Login extends Component {
         <div className="content-client">
           <form className="form-class">
           <div className="title-header">
-            <h2>BLA BLA</h2>
+            <h2>Sign in</h2>
           </div>
           <div className="wrapper">
             <div className="block">

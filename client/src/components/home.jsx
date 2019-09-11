@@ -12,11 +12,11 @@ const Home = () => {
       <div className="content">
         <div className="home-container">
           <div className="home-text">
-            <p>blablablablabla</p>
-            <h1>blablablablabla</h1>
-            <p>blablablabla</p>
+            <p>We deploy monitoring and meta-analysis solutions <br/> for national agencies, investment firms and financial institutions.</p>
+            <h1>Scientific heritage</h1>
+            <p>Collisio ® is a private firm combining research backgrounds <br/> from fields as varied as Aerospace, Cryptography and High Performance Computing <br/> into Finance. </p>
             <Link to="/contact">
-              <button type="button" className="btn btn-outline-primary">
+              <button type="button" className="btn btn-outline-dark">
                 Contact
               </button>
             </Link>
@@ -98,12 +98,12 @@ const Home = () => {
         </div>
         <div className="letter-container">
           <div className="newsletter">
-            <h3 id="title-news">BlaBlaBla</h3>
-            <p id="paragraph-news">blabalbalabalaba</p>
+            <h3 id="title-news">Subscribe to our newsletter</h3>
+            <p id="paragraph-news"></p>
             <form className="email-news">
               <div className="fieldset">
                 <input
-                  placeholder="Email"
+                  placeholder="Email address"
                   type="email"
                   className="email-text"
                   required

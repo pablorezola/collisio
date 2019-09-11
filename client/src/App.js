@@ -6,6 +6,8 @@ import NotFound from "./components/notFound";
 import Contact from "./components/contact";
 import Logout from "./components/logout";
 import NavBar from "./components/navBar";
+import Careers from "./components/careers";
+import Research from "./components/research";
 import PartnerDashboard from './components/partnerDashboard';
 import ClientDashboard from './components/clientDashboard';
 import Footer from './components/footer';
@@ -21,6 +23,8 @@ class App extends Component {
           <Route path="/partners" component={PartnerDashboard} />
           <Route path="/login" component={Login} />
           <Route path="/logout" component={Logout} />
+          <Route path="/careers" component={Careers} />
+          <Route path="/research" component={Research} />
           <Route path="/not-found" component={NotFound} />
           <Route path="/contact" component={Contact} />
           <Route path="/" exact component={Home} />

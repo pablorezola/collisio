@@ -9,7 +9,7 @@ class Contact extends Component {
           <div className="contact-form">
             <Form>
               <FormGroup controlId="formBasicEmail">
-                <h2 className="form-title"> Contact Us!</h2>
+                <h2 className="form-title"> Reach us</h2>
                 <Label className="text-label">Email address</Label>
                 <Input
                   type="email"
@@ -17,7 +17,6 @@ class Contact extends Component {
                   value=""
                   className="text-primary"
                   onChange
-                  placeholder="Enter email"
                 />
               </FormGroup>
               <FormGroup controlId="formBasicName">
@@ -28,7 +27,6 @@ class Contact extends Component {
                   value=""
                   className="text-primary"
                   onChange
-                  placeholder="Name"
                 />
               </FormGroup>
               <FormGroup controlId="formBasicSubject">
@@ -39,7 +37,6 @@ class Contact extends Component {
                   className="text-primary"
                   value=""
                   onChange
-                  placeholder="Subject"
                 />
               </FormGroup>
               <FormGroup controlId="formBasicMessage">
@@ -53,7 +50,7 @@ class Contact extends Component {
                 />
               </FormGroup>
               <button
-                className="btn btn-primary"
+                className="btn btn-outline-dark"
                 variant="primary"
                 type="submit"
               >

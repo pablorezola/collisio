@@ -10,24 +10,33 @@
 /* NavBar */
 
 .nav-header {
+  position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
   top: 0;
   left: 0;
   z-index: 1;
-  position: fixed;
+  margin: 0;
   background-color: white;
+  height: 7em;
 }
 
-.nav-bar {
-  padding-top: 17px;
+.bar-container {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.column {
+  display: table-cell;
+}
+
+#nav-links {
+  text-align: end;
 }
 
 .logo {
-  padding-left: 1em;
+  margin-left: 2em;
+  margin-top: 1em;
 }
 
 .listing {
@@ -49,6 +58,8 @@
   color: rgb(8, 61, 110);
 }
 
+/* Hamburger */
+
 .menu-wrap {
   top: 0;
   left: 0;
@@ -62,6 +73,8 @@
   width: 50px;
   height: 50px;
   opacity: 0;
+  margin-left: 9em;
+  margin-top: 30px;
 }
 
 .menu-wrap .hamburger {
@@ -69,13 +82,14 @@
   z-index: 1;
   width: 45px;
   height: 58px;
-  background: var(--white);
+  background-color: rgba(255, 255, 255, 0.95);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 9em;
+  margin-top: 30px;
 }
 
-/* Hamburger */
 .menu-wrap .hamburger > div {
   position: relative;
   width: 100%;
@@ -119,7 +133,7 @@
 /* Login Component */
 
 .content-client {
-  height: 73vh;
+  height: 90vh;
 }
 
 .login-clients {
@@ -128,6 +142,7 @@
 }
 
 .title-header {
+  padding-top: 10em;
   text-align: center;
 }
 
@@ -144,7 +159,7 @@
 }
 
 .block2 {
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 #label {
@@ -163,10 +178,10 @@
 }
 
 .home-container {
-  background-image: url("./images/picture.jpg");
+  background-image: url("./images/animation1.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 95vh;
 }
 
 .home-text {
@@ -183,7 +198,7 @@
   justify-content: center;
   background-color: rgb(212, 212, 212);
   padding: 40px 0;
-  padding-left: 13%;
+  padding-left: 11%;
   padding-right: 13%;
 }
 
@@ -216,7 +231,11 @@
 }
 
 #title-news {
-  margin: 0 0 15px 0;
+  margin: 0 0 55px 0;
+}
+
+.email-news {
+  padding-right: 5em;
 }
 
 #paragraph-news {
@@ -231,6 +250,18 @@
 
 .email-text {
   margin: 0 10px 0 0;
+}
+
+/* Careers */
+
+.career-container {
+  height: 90vh;
+}
+
+/* Research */
+
+.research-container {
+  height: 90vh;
 }
 
 /* Footer */
@@ -261,6 +292,7 @@
 /* Contact page */
 
 .form-title {
+  padding-top: 3em;
   padding-bottom: 10px;
 }
 
@@ -272,11 +304,12 @@
 }
 
 .contact-form {
-  padding-top: 2em;
+  padding-top: 11em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
   height: auto;
+  padding-left: 10em;
 }
 
 .text-label {

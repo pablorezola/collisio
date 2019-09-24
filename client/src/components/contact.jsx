@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FormFeedback, Form, FormGroup, Label, Input } from "reactstrap";
+import { Form, FormGroup, Label, Input } from "reactstrap";
 
 class Contact extends Component {
   render() {

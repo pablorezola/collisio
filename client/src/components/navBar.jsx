@@ -1,20 +1,16 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import logo from "../images/collissio.png";
 import { Link } from "react-router-dom";
 
+
 class NavBar extends Component {
+
   render() {
     return (
       <React.Fragment>
         <header className="nav-header">
           <div className="bar-container">
             <div className="column">
-              <div className="menu-wrap">
-                <input type="checkbox" className="toggler"></input>
-                <div className="hamburger">
-                  <div></div>
-                </div>
-              </div>
               <Link to="/">
                 <img className="logo" src={logo} height="80px" alt="" />
               </Link>
@@ -27,30 +23,6 @@ class NavBar extends Component {
                     style={{ textDecoration: "none", fontSize: "22px" }}
                   >
                     Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/login"
-                    style={{ textDecoration: "none", fontSize: "22px" }}
-                  >
-                    Login
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/research"
-                    style={{ textDecoration: "none", fontSize: "22px" }}
-                  >
-                    Research
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/careers"
-                    style={{ textDecoration: "none", fontSize: "22px" }}
-                  >
-                    Careers
                   </Link>
                 </li>
                 <li>

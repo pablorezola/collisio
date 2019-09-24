@@ -19,12 +19,6 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <Switch>
-          <Route path="/clients" component={ClientDashboard} />
-          <Route path="/partners" component={PartnerDashboard} />
-          <Route path="/login" component={Login} />
-          <Route path="/logout" component={Logout} />
-          <Route path="/careers" component={Careers} />
-          <Route path="/research" component={Research} />
           <Route path="/not-found" component={NotFound} />
           <Route path="/contact" component={Contact} />
           <Route path="/" exact component={Home} />
